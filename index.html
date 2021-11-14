@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>document</title>
+        <style>
+            body{
+                background-color: rgb(198, 248, 248);
+            }
+            #one{
+                box-shadow: 0 0 20px black;
+                width: 600px;
+                margin: 50px auto;
+                height: 20px;
+                padding: 30px;
+                text-align: center;
+            }
+           #two{
+               box-shadow: 0 0 20px black;
+               width: 600px;
+               margin: 50px auto;
+               height: 20px;
+               padding: 30px;
+               text-align: center;
+           }
+           #three{
+               box-shadow: 0 0 20px black;
+               width:600px ;
+               margin:50px auto ;
+               height: 20px;
+               padding: 30px;
+               text-align: center;
+           }
+           #button1{
+               color: gold;
+               border-color: gold;
+    
+                       }
+           #button2{
+               color: gold;
+               border-color: gold;
+           }
+           #button3{
+               color: gold;
+               border-color: gold;
+           }
+        </style>
+        <script>
+           function fn1(){
+          var jam =     document.getElementById('one');
+          jam.innerText="Yes , I accepts All Major credit cards";
+           }
+           function fn2(){
+               var pom =document.getElementById('two') ;
+            pom.innerText="Yes I Support Local Farmer";
+            }
+            function fn3(){
+                var tom = document.getElementById('three');
+                tom.innerText="Yes I use organic ingredients";
+            }
+        </script>
+    </head>
+    <body>
+        <h1 style="font-style: italic; color: gold; text-align: center;">General Questions</h1>
+    <div id="one">
+        Do You Accept All Major Credit Cards ?
+        <button id="button1" onclick="fn1()">+</button>
+    </div>
+    <div id="two">
+        Do You Support Local Framers?
+     <button id="button2" onclick="fn2()">+</button>
+    </div>
+    <div id="three">Do You Use Organic Ingredients ?
+        <button id="button3" onclick="fn3()">+</button>
+    </div>
+    </body>
+</html>
